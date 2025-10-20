@@ -7,8 +7,8 @@ package square;
  */
 
 /**
- * SquarePegs are not compatible with RoundHoles (they were implemented by
- * previous development team). But we have to integrate them into our program.
+ * SquarePegs no son compatible con RoundHoles 
+ * Tenemos que integrarlos
  */
 public class SquarePeg {
     private final double width;

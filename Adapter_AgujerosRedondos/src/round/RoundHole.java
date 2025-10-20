@@ -21,6 +21,7 @@ public class RoundHole {
 
     public boolean fits(RoundPeg peg) {
         boolean result;
+//       Si el agujero es igual o más grande, entonces el plug encaja.
         result = (this.getRadius() >= peg.getRadius());
         return result;
     }

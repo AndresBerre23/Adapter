@@ -10,9 +10,9 @@ import square.SquarePeg;
 
 
 /**
- * El adaptador permite encajar clavijas cuadradas en agujeros redondos.
+ * El adaptador permite encajar plug cuadradas en agujeros redondos.
  */
-public class SquarePegAdapter extends RoundPeg {
+public class SquarePegAdapter extends RoundPeg {//extiende  plug redondo para que sea tratado como uno
     private SquarePeg peg;                             //peg=clavija
 
     public SquarePegAdapter(SquarePeg peg) {
@@ -22,7 +22,7 @@ public class SquarePegAdapter extends RoundPeg {
     @Override
     public double getRadius() {
         double result;
-        //Calcula el radio mínimo de un círculo que pueda acomodar.
+        //Calcula el radio mínimo de un círculo que puede contener completamente el plug cuadrado
         result = (Math.sqrt(Math.pow((peg.getWidth() / 2), 2) * 2));
         return result;
     }
